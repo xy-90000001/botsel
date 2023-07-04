@@ -43,15 +43,13 @@ def main():
   driver = wiredriver(proxy_oxy)
   # driver = wiredriver()
   # driver = cdriver.Chrome(options=chromeOptions)
-  # while True:
   driver.get(url_adsite)
   # s = driver.page_source
   # print(s)
-  driver.refresh()
+  while True:
+    driver.refresh()
   # s = driver.page_source
   # print(s)
-  input('stay')
-  
 # from web import keep_alive
 # keep_alive()
 main()
