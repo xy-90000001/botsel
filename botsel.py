@@ -1,0 +1,58 @@
+
+from seleniumwire import webdriver
+from selenium import webdriver as cdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from chromedriver_py import binary_path
+# from advanced_selenium_options import Chrome, By
+
+proxy_oxy = "http://Xy90000001:Xy90000001@unblock.oxylabs.io:60000"
+# proxy_oxy2 = "unblock.oxylabs.io:60000:Xy90000001:Xy90000001"
+url_adsite = "https://a000.ex16.repl.co/"
+url_ident = 'https://ident.me/'
+
+chromeOptions = webdriver.ChromeOptions()
+# chrome_options.add_argument('--proxy-server=127.0.0.1:8888')
+chromeOptions.add_argument('--no-sandbox')
+chromeOptions.add_argument('--disable-setuid-sandbox')
+# chromeOptions.add_argument('--disable-dev-shm-usage')
+chromeOptions.add_argument("--headless")
+
+
+# chromeOptions.add_argument('--proxy-server=:{}'.format(proxy_oxy2))
+
+def wiredriver(PROXY=None):
+  seleniumwire_options = {
+    'proxy': {
+      'http': PROXY,
+      'verify_ssl': False,
+    },
+    'start-maximized': True,
+    'headless': True,
+  }
+  
+  # serv = Service(ChromeDriverManager().install())
+  # serv = Service(binary_path)
+  serv = Service('chromium-browser')
+  driver = webdriver.Chrome(service=serv, options=chromeOptions,seleniumwire_options=seleniumwire_options)
+#   driver = webdriver.Chrome(service=serv)
+  # driver = cdriver.Chrome(service=serv, options=chromeOptions)
+  return driver
+
+def main():
+  driver = wiredriver(proxy_oxy)
+  # driver = wiredriver()
+  # driver = cdriver.Chrome(options=chromeOptions)
+  # while True:
+  driver.get(url_adsite)
+  # s = driver.page_source
+  # print(s)
+  driver.refresh()
+  # s = driver.page_source
+  # print(s)
+  input('stay')
+  
+# from web import keep_alive
+# keep_alive()
+main()
+
