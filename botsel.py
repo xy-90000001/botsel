@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 # from webdriver_manager.chrome import ChromeDriverManager
 # from chromedriver_py import binary_path
 # from advanced_selenium_options import Chrome, By
+from threading import Thread
 
 proxy_oxy = "http://Xy90000001:Xy90000001@unblock.oxylabs.io:60000"
 # proxy_oxy2 = "unblock.oxylabs.io:60000:Xy90000001:Xy90000001"
@@ -35,18 +36,19 @@ def wiredriver(PROXY=None):
   # driver = cdriver.Chrome(service=serv, options=chromeOptions)
   return driver
 
-def main():
+def mainloop():
   driver = wiredriver(proxy_oxy)
   # driver = wiredriver()
   # driver = cdriver.Chrome(options=chromeOptions)
   driver.get(url_adsite)
-  # s = driver.page_source
-  # print(s)
-  while True:
+  for i in range(10):
     driver.refresh()
-  # s = driver.page_source
-  # print(s)
-# from web import keep_alive
-# keep_alive()
-main()
+
+def botsel_thread():
+  # t = threading.Thread(target=, args = (q,u))
+  t = Thread(target=mainloop)
+  t.start()
+  #time.sleep(1)
+
+
 
