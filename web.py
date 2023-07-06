@@ -12,7 +12,7 @@ def home():
 
 def run():
   app.run(host='0.0.0.0', port=8080, use_reloader=False, debug=True)
-  app.run()
+  # app.run()
 
 # import botsel
 # botsel.botsel_thread()
