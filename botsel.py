@@ -43,7 +43,7 @@ def mainloop():
     driver.refresh()
 
 import web
-web.keepalive()
+web.keep_alive()
 mainloop()
 
 # def botsel_thread():
