@@ -40,11 +40,12 @@ def mainloop():
   # driver = wiredriver()
   # driver = cdriver.Chrome(options=chromeOptions)
   driver.get(url_adsite)
-  for i in range(10):
+  # for i in range(10):
+  while True:
     driver.refresh()
 
 import web
-web.keep_alive()
+# web.keep_alive()
 mainloop()
 
 # def botsel_thread():
