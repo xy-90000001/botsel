@@ -11,12 +11,12 @@ def home():
     return 'botsel'
 
 def run():
-#   app.run(host='0.0.0.0')#, port=8080, use_reloader=False, debug=True)
+  app.run(host='0.0.0.0', port=8080, use_reloader=False, debug=True)
   app.run()
 
 # import botsel
 # botsel.botsel_thread()
-# run()
+run()
 
 def keep_alive():
   # t = threading.Thread(target=, args = (q,u))
@@ -24,4 +24,4 @@ def keep_alive():
   t.start()
   time.sleep(1)
 
-keep_alive()
+# keep_alive()
