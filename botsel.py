@@ -15,7 +15,7 @@ chromeOptions.add_argument('--no-sandbox')
 chromeOptions.add_argument('--disable-setuid-sandbox')
 # chromeOptions.add_argument('--disable-dev-shm-usage')
 chromeOptions.add_argument("--headless")
-chromeOptions.add_argument("--remote-debugging-port=9222")  # this
+# chromeOptions.add_argument("--remote-debugging-port=9222")  # this
 
 def wiredriver(PROXY=None):
   seleniumwire_options = {
