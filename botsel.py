@@ -42,11 +42,15 @@ def mainloop():
   for i in range(10):
     driver.refresh()
 
-def botsel_thread():
-  # t = threading.Thread(target=, args = (q,u))
-  t = Thread(target=mainloop)
-  t.start()
-  #time.sleep(1)
+import web
+web.keepalive()
+mainloop()
+
+# def botsel_thread():
+#   # t = threading.Thread(target=, args = (q,u))
+#   t = Thread(target=mainloop)
+#   t.start()
+#   #time.sleep(1)
 
 
 
