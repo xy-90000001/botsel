@@ -27,10 +27,10 @@ def wiredriver(PROXY=None):
     'headless': True,
   }
   
-  serv = Service(ChromeDriverManager().install())
+  # serv = Service(ChromeDriverManager().install())
   # serv = Service(binary_path)
   # serv = Service('chromium-browser')
-  driver = webdriver.Chrome(service=serv, options=chromeOptions,seleniumwire_options=seleniumwire_options)
+  driver = webdriver.Chrome(options=chromeOptions,seleniumwire_options=seleniumwire_options)
 #   driver = webdriver.Chrome(service=serv)
   # driver = cdriver.Chrome(service=serv, options=chromeOptions)
   return driver
