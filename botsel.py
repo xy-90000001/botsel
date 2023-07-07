@@ -44,8 +44,9 @@ def mainloop():
   while True:
     driver.refresh()
 
-import web
-# web.keep_alive()
+
+import keepalive
+keepalive.keep_alive()
 mainloop()
 
 # def botsel_thread():
