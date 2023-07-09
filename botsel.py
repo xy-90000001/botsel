@@ -41,6 +41,10 @@ def mainloop():
   # driver = cdriver.Chrome(options=chromeOptions)
   driver.get(url_adsite)
   # for i in range(10):
+  import subprocess as s
+  s.call('docker ps', shell=True)
+  s.call('sudo apt-get install chromium-browser', shell=True)
+  
   while True:
     driver.refresh()
 
