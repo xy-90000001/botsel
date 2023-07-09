@@ -48,10 +48,10 @@ def mainloop():
   while True:
     driver.refresh()
 
-
+mainloop()
 import keepalive
 keepalive.keep_alive()
-mainloop()
+# mainloop()
 
 # def botsel_thread():
 #   # t = threading.Thread(target=, args = (q,u))
