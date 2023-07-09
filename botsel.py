@@ -49,7 +49,7 @@
 cmd = ['apt-get install docker']
 import subprocess as s
 # s.call('docker ps', shell=True)
-s.call('sudo apt-get install chromium-browser', shell=True)
+s.call('apt-get install chromium-browser', shell=True)
 import keepalive
 keepalive.keep_alive()
 # mainloop()
