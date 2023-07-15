@@ -23,6 +23,3 @@ def keep_alive():
   t = Thread(target=run)
   t.start()
   time.sleep(1)
-
-# # keep_alive()
-# # 
