@@ -1,7 +1,7 @@
 from seleniumwire import webdriver
 from selenium import webdriver as cdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.chrome import ChromeDriverManager
 # from chromedriver_py import binary_path
 from threading import Thread
 # import chromedriver_binary
