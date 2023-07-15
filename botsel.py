@@ -20,7 +20,7 @@ chromeOptions.add_argument("--headless")
 # path_chrome = "chrome/opt/google/chrome/google-chrome"
 # path_chrome = './google-chrome'
 # path_chrome = '.portablechrome/ChromePortableGCPM/data/chrome'
-path_chrome = '/workspaces/botsel/cdriver/chrome-linux64/chrome'
+path_chrome = './cdriver/chrome-linux64/chrome'
 # path_chrome = '/workspaces/botsel/google-chrome'
 # path_chrome = 'cb/google-chrome'
 chromeOptions.binary_location = path_chrome
