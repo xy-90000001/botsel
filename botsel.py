@@ -19,8 +19,8 @@ chromeOptions.add_argument("--headless")
 # chromeOptions.add_argument("--remote-debugging-port=9222")  # this
 # path_chrome = "chrome/opt/google/chrome/google-chrome"
 # path_chrome = './google-chrome'
-# path_chrome = '.portablechrome/ChromePortableGCPM/data/chrome'
-path_chrome = './cdriver/chrome-linux64/chrome'
+# path_chrome = './portablechrome/ChromePortableGCPM/chromeGCPM.desktop'
+path_chrome = './cdriver/chrome-linux/chrome'
 # path_chrome = '/workspaces/botsel/google-chrome'
 # path_chrome = 'cb/google-chrome'
 chromeOptions.binary_location = path_chrome
