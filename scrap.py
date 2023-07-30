@@ -1,6 +1,10 @@
 import asyncio
 from pyppeteer import launch
 import pyppeteer
+import subprocess as s
+
+s.call("ENV XDG_CACHE_HOME='/tmp/.cache'")
+s.call("ENV PYPPETEER_HOME='/tmp/'")
 
 async def main():
     # pyppeteer.chromium_downloader.download_chromium()
@@ -13,7 +17,7 @@ async def main():
                 '--no-sandbox', 
                 '--disabled-setuid-sandbox', 
                 '--disable-dev-profile', 
-                '--user-data-dir=./'
+                '--user-data-dir=/tmp'
             ]
         })
     page = await browser.newPage()
