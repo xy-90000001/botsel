@@ -6,7 +6,16 @@ async def main():
     # pyppeteer.chromium_downloader.download_chromium()
     # help(pyppeteer.chromium_downloader.download_chromium)
     # browser = await launch()
-    browser = await launch(executablePath='./chrome-linux/chrome', --disable-gpu=True, --no-sandbox=True, --single-process=True, --disable-web-security=True, --disable-dev-profile=True )
+    # browser = await launch(executablePath='./chrome-linux/chrome', --disable-gpu=True, --no-sandbox=True, --single-process=True, --disable-web-security=True, --disable-dev-profile=True )
+    browser = await launch({
+            'headless': True,
+            'args': [
+                '--no-sandbox', 
+                '--disabled-setuid-sandbox', 
+                '--disable-dev-profile', 
+                '--user-data-dir=./'
+            ]
+        })
     page = await browser.newPage()
     url = 'http://ident.me'
     await page.goto(url)
