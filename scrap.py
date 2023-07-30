@@ -13,6 +13,7 @@ async def main():
     # browser = await launch(executablePath='./chrome-linux/chrome', --disable-gpu=True, --no-sandbox=True, --single-process=True, --disable-web-security=True, --disable-dev-profile=True )
     browser = await launch({
             'headless': True,
+            'executablePath' = './chrome-linux/chrome'
             'args': [
                 '--no-sandbox', 
                 '--disabled-setuid-sandbox', 
