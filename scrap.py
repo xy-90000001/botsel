@@ -12,7 +12,7 @@ async def main():
     # help(pyppeteer.chromium_downloader.download_chromium)
     # browser = await launch()
     # browser = await launch(executablePath='./chrome-linux/chrome', disable-gpu=True, no-sandbox=True, single-process=True, disable-web-security=True, disable-dev-profile=True, headless=True )
-    browser = await launch(executablePath = './chrome-linux/chrome', disable-dev-profile = True, headless = True)
+    browser = await launch(executablePath = './chrome-linux/chrome', headless = True)
     # browser = await launch({'executablePath' = './chrome-linux/chrome',
     #         'headless': True,
     #         'args': [
