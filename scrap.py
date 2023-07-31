@@ -3,23 +3,24 @@ from pyppeteer import launch
 import pyppeteer
 import subprocess as s
 
-s.call("ENV XDG_CACHE_HOME='/tmp/.cache'")
-s.call("ENV PYPPETEER_HOME='/tmp/'")
+s.call('mkdir /tmp/.cache', shell=True)
+s.call("ENV XDG_CACHE_HOME='/tmp/.cache'",shell=True)
+s.call("ENV PYPPETEER_HOME='/tmp/'", shell=True)
 
 async def main():
     # pyppeteer.chromium_downloader.download_chromium()
     # help(pyppeteer.chromium_downloader.download_chromium)
     # browser = await launch()
-    # browser = await launch(executablePath='./chrome-linux/chrome', --disable-gpu=True, --no-sandbox=True, --single-process=True, --disable-web-security=True, --disable-dev-profile=True )
-    browser = await launch({'executablePath' = './chrome-linux/chrome',
-            'headless': True,
-            'args': [
-                '--no-sandbox', 
-                '--disabled-setuid-sandbox', 
-                '--disable-dev-profile', 
-                '--user-data-dir=/tmp'
-            ]
-        })
+    browser = await launch(executablePath='./chrome-linux/chrome', disable-gpu=True, no-sandbox=True, single-process=True, disable-web-security=True, disable-dev-profile=True, headless=True )
+    # browser = await launch({'executablePath' = './chrome-linux/chrome',
+    #         'headless': True,
+    #         'args': [
+    #             '--no-sandbox', 
+    #             '--disabled-setuid-sandbox', 
+    #             '--disable-dev-profile', 
+    #             '--user-data-dir=/tmp'
+    #         ]
+    #     })
     page = await browser.newPage()
     url = 'http://ident.me'
     await page.goto(url)
