@@ -1,5 +1,5 @@
 import asyncio
-from pyppeteer2 import launch
+from pyppeteer import launch
 # import pyppeteer
 import subprocess as s
 import pyppeteer_stealth as p
