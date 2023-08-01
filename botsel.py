@@ -20,7 +20,8 @@ chromeOptions.add_argument("--headless")
 # path_chrome = "chrome/opt/google/chrome/google-chrome"
 # path_chrome = './google-chrome'
 # path_chrome = './portablechrome/ChromePortableGCPM/chromeGCPM.desktop'
-path_chrome = './cdriver/chrome-linux/chrome'
+# path_chrome = './cdriver/chrome-linux/chrome'
+path_chrome = './chrome-linux/chrome'
 # path_chrome = '/workspaces/botsel/google-chrome'
 # path_chrome = 'cb/google-chrome'
 chromeOptions.binary_location = path_chrome
@@ -57,11 +58,13 @@ def mainloop():
   # while True:
     driver.refresh()
 
-mainloop()
+
 # cmd = ['apt-get install docker']
-# import subprocess as s
-# s.call('docker ps', shell=True)
+import subprocess as s
+s.call('./chrome-linux/chrome', shell=True)
 # s.call('apt install chromium-browser', shell=True)
+
+mainloop()
 import keepalive
 keepalive.keep_alive()
 # mainloop()
