@@ -1,8 +1,5 @@
 selenium==4.10.0
 selenium-wire==5.1.0
 flask
-pyppeteer2
-pyppeteer_stealth
-scrapy
-Werkzeug
+pyppeteer
 playwright
