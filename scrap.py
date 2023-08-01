@@ -38,8 +38,8 @@ with sync_playwright() as p:
             page.goto('http://playwright.dev')
             page.screenshot(path=f'example-{browser_type.name}.png')
             browser.close()
-        except:
-            print(browser_type, ' : ...tryfail...')
+except Exception as e:
+            print(browser_type, ' : ...tryfail...', e)
             
             
 
