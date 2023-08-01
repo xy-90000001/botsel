@@ -3,3 +3,4 @@ selenium-wire==5.1.0
 flask
 pyppeteer
 scrapy
+Werkzeug
