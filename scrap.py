@@ -1,8 +1,9 @@
 import asyncio
 from pyppeteer import launch
-# import pyppeteer
+import pyppeteer
 import subprocess as s
-import pyppeteer_stealth as p
+
+# import pyppeteer_stealth as p
 
 s.call('mkdir /tmp/.cache', shell=True)
 s.call("ENV XDG_CACHE_HOME='/tmp/.cache'",shell=True)
