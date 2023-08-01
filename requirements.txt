@@ -5,3 +5,4 @@ pyppeteer2
 pyppeteer_stealth
 scrapy
 Werkzeug
+playwright
