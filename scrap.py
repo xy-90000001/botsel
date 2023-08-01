@@ -1,7 +1,8 @@
 import asyncio
 from pyppeteer import launch
-import pyppeteer
+# import pyppeteer
 import subprocess as s
+import pyppeteer_stealth as p
 
 s.call('mkdir /tmp/.cache', shell=True)
 s.call("ENV XDG_CACHE_HOME='/tmp/.cache'",shell=True)
@@ -10,7 +11,7 @@ s.call("ENV PYPPETEER_HOME='/tmp/'", shell=True)
 async def main():
     # pyppeteer.chromium_downloader.download_chromium()
     # help(pyppeteer.chromium_downloader.download_chromium)
-    browser = await launch()
+    browser = await p.launch(headless=True)
     # browser = await launch(headless=True, executablePath = r'./chrome-linux/chrome', userDataDir = './')
     # browser = await launch(executablePath='./chrome-linux/chrome', disable-gpu=True, no-sandbox=True, single-process=True, disable-web-security=True, disable-dev-profile=True, headless=True )
     # browser = await launch(executablePath = './chrome-linux/chrome', headless = True)
