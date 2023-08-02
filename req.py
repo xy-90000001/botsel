@@ -11,8 +11,8 @@ url_ipm = 'https://ad.a-ads.com/2199641'
 for i in range(20):
   print(i)
   req.get(url_ipm)
-  sleep(1)
-  req.get(url_click)
+  # sleep(1)
+  # req.get(url_click)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
