@@ -4,7 +4,7 @@ import requests as req
 url_adsite = 'https://a000.ex16.repl.co/'
 url_ad = 'https://click.a-ads.com/2199641/2/'
 
-/# proxies= {adf}
+# proxies= {adf}
 # r.get(url_adsite, proxies=proxies)
 for i in range(5):
   print(i, 'a')
