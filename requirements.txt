@@ -1,4 +1,4 @@
 flask
 pyppeteer
 playwright
-requests_html
+requests-html
