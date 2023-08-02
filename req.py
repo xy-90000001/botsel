@@ -18,7 +18,7 @@ for i in range(20):
   print(i)
   req.get(url_ipm, proxies=proxies)
   # sleep(1)
-  req.get(url_click, proxies=proxies)
+  req.get(url_click,  verify=Fals,  proxies=proxies)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
