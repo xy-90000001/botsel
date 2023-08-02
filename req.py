@@ -10,7 +10,7 @@ url_ipm = 'https://ad.a-ads.com/2199641'
 # r.get(url_adsite, proxies=proxies)
 for i in range(5):
   print(i)
-  sleep(2)
+  sleep(6)
   req.get(url_ipm)
   # req.get(url_adsite)
   
