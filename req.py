@@ -16,9 +16,9 @@ proxy_oxy = "http://exash:Xy90000001@unblock.oxylabs.io:60000"
 # r.get(url_adsite, proxies=proxies)
 for i in range(20):
   print(i)
-  req.get(url_ipm, proxies=proxies)
+  req.get(url_ipm, verify=False, proxies=proxies)
   # sleep(1)
-  req.get(url_click,  verify=Fals,  proxies=proxies)
+  req.get(url_click,  verify=False,  proxies=proxies)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
