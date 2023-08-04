@@ -22,7 +22,7 @@ def mainloop():
     # req.get(url_ipm)
     session.get(url_ipm, verify=False)
     # sleep(1)
-    req.get(url_click,  verify=False)
+    session.get(url_click, verify=False)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
