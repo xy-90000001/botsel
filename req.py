@@ -17,7 +17,7 @@ session = req.Session()
 session.proxies = proxies
 
 def mainloop():
-  for i in range(20):
+  for i in range(100):
     print(i)
     # req.get(url_ipm)
     session.get(url_ipm, verify=False)
