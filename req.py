@@ -11,16 +11,18 @@ proxies = {'http': "http://exash:Xy90000001@unblock.oxylabs.io:60000",'https': "
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
 proxy_oxy = "http://exash:Xy90000001@unblock.oxylabs.io:60000"
 
-
-
 # r.get(url_adsite, proxies=proxies)
+
+session = req.Session()
+session.proxies = proxies
+
 def mainloop():
-  for i in range(5):
+  for i in range(20):
     print(i)
-    req.get(url_ipm)
-    req.get(url_ipm, verify=False, proxies=proxies)
+    # req.get(url_ipm)
+    session.get(url_ipm, verify=False)
     # sleep(1)
-    # req.get(url_click,  verify=False,  proxies=proxies)
+    req.get(url_click,  verify=False)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
