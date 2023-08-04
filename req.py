@@ -14,12 +14,13 @@ proxy_oxy = "http://exash:Xy90000001@unblock.oxylabs.io:60000"
 
 
 # r.get(url_adsite, proxies=proxies)
-for i in range(5):
-  print(i)
-  req.get(url_ipm)
-  req.get(url_ipm, verify=False, proxies=proxies)
-  # sleep(1)
-  # req.get(url_click,  verify=False,  proxies=proxies)
+def mainloop():
+  for i in range(5):
+    print(i)
+    req.get(url_ipm)
+    req.get(url_ipm, verify=False, proxies=proxies)
+    # sleep(1)
+    # req.get(url_click,  verify=False,  proxies=proxies)
   
 # from requests_html import HTMLSession
 # session = HTMLSession()
@@ -27,6 +28,12 @@ for i in range(5):
 #   print(i)
 #   r = session.get(url_adsite)
 #   r.html.render()
+try:
+  mainloop()
+except:
+  print('err')
+    
+
 
 import keepalive
 keepalive.keep_alive()
