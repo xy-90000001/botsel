@@ -37,6 +37,9 @@ def mainloop():
     # session.get(url_click, verify=False)
     session.get(url_2bt, verify=False)
     session.get(url_adsterra, verify=False)
+    session.get(url_coinserom, verify=False)
+    session.get(url_adshare, verify=False)
+    
 
 try:
   mainloop()
