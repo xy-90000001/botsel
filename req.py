@@ -32,12 +32,12 @@ def mainloop():
     session.get(url_2bt, verify=False)
     session.get(url_adsterra, verify=False)
 
+try:
+  mainloop()
+except:
+  print('err')
 
 import keepalive
 keepalive.keep_alive()
 
 
-try:
-  mainloop()
-except:
-  print('err')
