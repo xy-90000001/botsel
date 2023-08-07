@@ -43,13 +43,8 @@ def mainloop():
   except:
     print("errloop")
     
-        
-    
 
-try:
-  mainloop()
-except:
-  print('err')
+mainloop()
 
 import keepalive
 keepalive.keep_alive()
