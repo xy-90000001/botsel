@@ -15,7 +15,7 @@ url_ping = "https://botreq.onrender.com/"
 # <script type="text/javascript" src="https://app.adaround.net/main.js" async></script>
 
 
-proxies = {'http': "http://exash:Xy90000001@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
+proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
 proxy_oxy = "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000"
 
