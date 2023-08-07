@@ -9,6 +9,8 @@ import subprocess as s
 #s.call("ENV XDG_CACHE_HOME='/tmp/.cache'",shell=True)
 #s.call("ENV PYPPETEER_HOME='/tmp/'", shell=True)
 
+url_adsite = "https://a000.ex16.repl.co/"
+
 async def main():
 #     # pyppeteer.chromium_downloader.download_chromium()
 #     # help(pyppeteer.chromium_downloader.download_chromium)
