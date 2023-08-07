@@ -9,7 +9,7 @@ url_2bt = 'http://traffic2bitcoin.com/ptp2.php?ref=Exash'
 url_adsterra = 'https://www.highcpmrevenuegate.com/dahcgmdy89?key=cbcfa1e9a4c631faf6ed1b29519abfce'
 url_coinserom = 'https://ads.coinserom.com/publisher?adsunit=437'
 url_adshare = 'https://app.adaround.net/supply/register?iid=LSPCjcKqClgpTzcWw67CsXs8w649'
-
+url_ping = "https://botreq.onrender.com/"
 # <div class="_fa7cdd4c68507744" data-placement="4803df9cffe6498ea6fff5948dd09854" style="width:320px;height:100px;display: inline-block;margin: 0 auto"></div>
 # <script type="text/javascript" src="https://app.adaround.net/main.js" async></script>
 
