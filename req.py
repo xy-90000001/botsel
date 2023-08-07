@@ -30,8 +30,9 @@ def mainloop():
   try:
     while True:
       c+=1
-      if c==50:
+      if c==20:
         req.get(url_ping)
+        sleep(2)
         c = 0
     # print(i)
       session.get(url_aipm, verify=False)
