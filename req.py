@@ -26,19 +26,24 @@ session.proxies = proxies
 def mainloop():
   # for i in range(5000):
   c = 0
-  while True:
-    c+=1
-    if c==50:
-      req.get(url_ping)
-      c = 0
+  try:
+    while True:
+      c+=1
+      if c==50:
+        req.get(url_ping)
+        c = 0
     # print(i)
-    session.get(url_aipm, verify=False)
+      session.get(url_aipm, verify=False)
     # sleep(1)
     # session.get(url_click, verify=False)
-    session.get(url_2bt, verify=False)
-    session.get(url_adsterra, verify=False)
-    session.get(url_coinserom, verify=False)
-    session.get(url_adshare, verify=False)
+      session.get(url_2bt, verify=False)
+      session.get(url_adsterra, verify=False)
+      session.get(url_coinserom, verify=False)
+      session.get(url_adshare, verify=False)
+  except:
+    print("errloop")
+    
+        
     
 
 try:
