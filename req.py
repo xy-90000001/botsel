@@ -14,8 +14,9 @@ url_ping = "https://botreq.onrender.com/"
 # <div class="_fa7cdd4c68507744" data-placement="4803df9cffe6498ea6fff5948dd09854" style="width:320px;height:100px;display: inline-block;margin: 0 auto"></div>
 # <script type="text/javascript" src="https://app.adaround.net/main.js" async></script>
 
-
-proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
+proxy_apy = 'http://groups-RESIDENTIAL:apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf@proxy.apify.com:8000'
+proxies = {'http': proxy_apy, 'https':proxy_apy,}
+# proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
 proxy_oxy = "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000"
 
@@ -39,9 +40,10 @@ def mainloop():
     # sleep(1)
     # session.get(url_click, verify=False)
     session.get(url_2bt, verify=False)
+    req.get(url_2bt, verify=False)
     session.get(url_adsterra, verify=False)
-    session.get(url_taco, verify=False)
-    session.get(url_adshare, verify=False)
+    # session.get(url_taco, verify=False)
+    # session.get(url_adshare, verify=False)
  # except:
     #print("errloop")
     
