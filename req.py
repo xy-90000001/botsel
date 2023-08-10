@@ -39,12 +39,12 @@ def mainloop():
   c = 0
   #
   run=0
-  while run<1000:
+  while True:
     c+=1
     run+=1
     if c==10:
       req.get(url_ping)
-      sleep(4)
+      sleep(3)
       c = 0
     # print(i)
     # session.get(url_aipm, verify=False)
@@ -62,10 +62,10 @@ def mainloop():
     #print("errloop")
     
 
-
-# import keepalive
-# keepalive.keep_alive()
 mainloop()
+import keepalive
+keepalive.keep_alive()
+
 
 
 
