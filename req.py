@@ -56,15 +56,15 @@ def mainloop():
     # session.get(url_adsterra, verify=False)
     req.get(url_adsterra)
     # session.get(url_taco, verify=False)
-    req.get(url_taco)
+    # req.get(url_taco)
     # session.get(url_adshare, verify=False)
  # except:
     #print("errloop")
     
 
 
-import keepalive
-keepalive.keep_alive()
+# import keepalive
+# keepalive.keep_alive()
 mainloop()
 
 
