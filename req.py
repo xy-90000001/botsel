@@ -17,7 +17,7 @@ url_ping = "https://botreq.onrender.com/"
 user = "groups-SHADER+BUYPROXIES94952"
 user = "groups-RESIDENTIAL"
 user= "auto"
-proxy_apy = f'http://{user}:apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf@proxy.apify.com:8000'
+proxy_apy = f'http://<{user}>:<apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf>@proxy.apify.com:8000'
 proxies = {'http': proxy_apy, 'https':proxy_apy,}
 # proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
