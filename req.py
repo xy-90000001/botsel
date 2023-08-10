@@ -42,9 +42,9 @@ def mainloop():
   while run<1000:
     c+=1
     run+=1
-    if c==20:
+    if c==10:
       req.get(url_ping)
-      sleep(2)
+      sleep(4)
       c = 0
     # print(i)
     # session.get(url_aipm, verify=False)
