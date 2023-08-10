@@ -38,19 +38,23 @@ def mainloop():
   # for i in range(5000):
   c = 0
   #
-  while True:
+  run=0
+  while run<1000:
     c+=1
+    run+=1
     if c==20:
       req.get(url_ping)
       sleep(2)
       c = 0
     # print(i)
-    session.get(url_aipm, verify=False)
+    # session.get(url_aipm, verify=False)
+    req.get(url_aipm, verify=False)
     # sleep(1)
     # session.get(url_click, verify=False)
-    session.get(url_2bt, verify=False)
+    # session.get(url_2bt, verify=False)
     req.get(url_2bt, verify=False)
-    session.get(url_adsterra, verify=False)
+    # session.get(url_adsterra, verify=False)
+    req.get(url_adsterra, verify=False)
     # session.get(url_taco, verify=False)
     # session.get(url_adshare, verify=False)
  # except:
