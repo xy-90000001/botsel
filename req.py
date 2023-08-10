@@ -1,4 +1,4 @@
-print('#################################reqqqqqqqqqqqqqqqq################################')
+print('#################################reqqqqqqqqqqqqqqqq################################1')
 import requests as req
 from time import sleep
 from requests.auth import HTTPProxyAuth
@@ -48,14 +48,15 @@ def mainloop():
       c = 0
     # print(i)
     # session.get(url_aipm, verify=False)
-    req.get(url_aipm, verify=False)
+    req.get(url_aipm)
     # sleep(1)
     # session.get(url_click, verify=False)
     # session.get(url_2bt, verify=False)
-    req.get(url_2bt, verify=False)
+    req.get(url_2bt)
     # session.get(url_adsterra, verify=False)
-    req.get(url_adsterra, verify=False)
+    req.get(url_adsterra)
     # session.get(url_taco, verify=False)
+    req.get(url_taco)
     # session.get(url_adshare, verify=False)
  # except:
     #print("errloop")
