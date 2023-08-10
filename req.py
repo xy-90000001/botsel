@@ -1,6 +1,7 @@
 print('#################################reqqqqqqqqqqqqqqqq################################')
 import requests as req
 from time import sleep
+from requests.auth import HTTPProxyAuth
 
 url_adsite = 'https://a000.ex16.repl.co/'
 url_aclick = 'https://click.a-ads.com/2199641/2/'
@@ -16,17 +17,22 @@ url_ping = "https://botreq.onrender.com/"
 
 user = "groups-SHADER+BUYPROXIES94952"
 user = "groups-RESIDENTIAL"
-user= "auto"
-proxy_apy = f'http://<{user}>:<apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf>@proxy.apify.com:8000'
+user= "groups-auto"
+password= "apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf"
+password2= "apify_proxy_q2rPe7qovWxkU71fLmJKwHp0NL6wZi0S20IS"
+#proxy_apy = f'http://<{user}>:<apify_proxy_kLL2nn1MA5Wd468LmDvPExVB8Np06o0fryYf>@proxy.apify.com:8000'
+proxy_apy = f'http://<{user}>:<{password}>@proxy.apify.com:8000'
 proxies = {'http': proxy_apy, 'https':proxy_apy,}
 # proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
 proxy_oxy = "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000"
 
 # r.get(url_adsite, proxies=proxies)
+auth = HTTPProxyAuth(user, password)
 
 session = req.Session()
 session.proxies = proxies
+session.auth = auth
 
 def mainloop():
   # for i in range(5000):
