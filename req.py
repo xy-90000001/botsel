@@ -62,9 +62,10 @@ def mainloop():
     #print("errloop")
     
 
-mainloop()
 
 import keepalive
 keepalive.keep_alive()
+mainloop()
+
 
 
