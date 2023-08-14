@@ -25,14 +25,13 @@ proxy_apy = f'http://<{user}>:<{password2}>@proxy.apify.com:8000'
 proxies = {'http': proxy_apy, 'https':proxy_apy,}
 # proxies = {'http': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",'https': "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000",}
 # curl 'http://quotes.toscrape.com/js/' -U 'exash:Xy90000001' -x 'unblock.oxylabs.io:60000' -H 'x-oxylabs-geo-location: United States' -H 'x-oxylabs-render: html' -k -v 
-proxy_oxy = "http://Xy90000001req2:Xy90000001req2@unblock.oxylabs.io:60000"
-
-# r.get(url_adsite, proxies=proxies)
-auth = HTTPProxyAuth(user, password2)
+proxy_oxy = "http://Cache0000:Cache12341234@unblock.oxylabs.io:60000"
+proxies = {'http': proxy_oxy, 'https':proxy_oxy,}
+# auth = HTTPProxyAuth(user, password2)
 
 session = req.Session()
 session.proxies = proxies
-session.auth = auth
+# session.auth = auth
 
 def mainloop():
   # for i in range(5000):
@@ -47,14 +46,14 @@ def mainloop():
       sleep(3)
       c = 0
     # print(i)
-    # session.get(url_aipm, verify=False)
-    req.get(url_aipm)
+    session.get(url_aipm, verify=False)
+    # req.get(url_aipm)
     # sleep(1)
     # session.get(url_click, verify=False)
-    # session.get(url_2bt, verify=False)
-    req.get(url_2bt)
-    # session.get(url_adsterra, verify=False)
-    req.get(url_adsterra)
+    session.get(url_2bt, verify=False)
+    # req.get(url_2bt)
+    session.get(url_adsterra, verify=False)
+    # req.get(url_adsterra)
     # session.get(url_taco, verify=False)
     # req.get(url_taco)
     # session.get(url_adshare, verify=False)
@@ -63,6 +62,7 @@ def mainloop():
     
 
 mainloop()
+
 import keepalive
 keepalive.keep_alive()
 
