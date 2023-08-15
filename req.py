@@ -38,12 +38,13 @@ def mainloop():
   # for i in range(5000):
   c = 0
   #
-  run=0
+  # run=0
   while True:
     c+=1
-    run+=1
-    if c==10:
-      req.get(url_ping)
+    # run+=1
+    if c==5:
+      req.get(url_ping, timeout=30)
+      req.get(url_ping, timeout=30)
       sleep(3)
       c = 0
     # print(i)
