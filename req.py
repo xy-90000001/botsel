@@ -11,7 +11,8 @@ url_adsterra = 'https://www.highcpmrevenuegate.com/dahcgmdy89?key=cbcfa1e9a4c631
 url_coinserom = 'https://ads.coinserom.com/publisher?adsunit=437'
 url_adshare = 'https://app.adaround.net/supply/register?iid=LSPCjcKqClgpTzcWw67CsXs8w649'
 url_taco = "https://cysgx.alpheratzscheat.top/?pl=3t7M8ZcKoUSC3A0Q1--mxg"
-url_ping = "https://botreq.onrender.com/"
+#url_ping = "https://botreq.onrender.com/"
+url_ping = "https://req-fcsh.onrender.com/"
 # <div class="_fa7cdd4c68507744" data-placement="4803df9cffe6498ea6fff5948dd09854" style="width:320px;height:100px;display: inline-block;margin: 0 auto"></div>
 # <script type="text/javascript" src="https://app.adaround.net/main.js" async></script>
 
