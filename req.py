@@ -43,9 +43,13 @@ def mainloop():
     c+=1
     # run+=1
     if c==5:
-      req.get(url_ping, timeout=30)
-      req.get(url_ping, timeout=30)
-      sleep(3)
+      try:
+        req.get(url_ping, timeout=30)
+      except:
+        print('timed')
+          
+      # req.get(url_ping, timeout=30)
+      sleep(1)
       c = 0
     # print(i)
     session.get(url_aipm, verify=False)
