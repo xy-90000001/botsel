@@ -1,4 +1,15 @@
 print('#################################reqqqqqqqqqqqqqqqq################################1')
+
+import pyppeteer
+import asyncio
+async def scrap(url, user=None, passs=None):
+  browser = await pyppeteer.launch()
+  page = await browser.newPage()
+
+  # Go to the signup page
+  await page.goto(url)
+asyncio.get_event_loop().run_until_complete(scrap('https://ident.me'))
+
 import requests as req
 from time import sleep
 from requests.auth import HTTPProxyAuth
