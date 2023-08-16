@@ -30,8 +30,8 @@ proxy_oxy = "http://Cache0000:Cache000@unblock.oxylabs.io:60000"
 proxies = {'http': proxy_oxy, 'https':proxy_oxy,}
 # auth = HTTPProxyAuth(user, password2)
 
-session = req.Session()
-session.proxies = proxies
+# session = req.Session()
+# session.proxies = proxies
 # session.auth = auth
 
 def mainloop():
